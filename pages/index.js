@@ -18,7 +18,7 @@ function Home(props) {
 								<article key = {i.data.id} class="thumb">
 									<a href={i.data.url} class="image"><img src={i.data.url} alt="" /></a>		
 									<h2>{i.data.title}</h2>
-									<a className = "link" href = {`https://reddit.com/${i.data.permalink}`}> 
+									<a className = "link" target="_blank" href = {`https://reddit.com/${i.data.permalink}`}> 
 									View Original</a> 
 								</article>
 								)
