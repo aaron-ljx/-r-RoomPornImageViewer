@@ -1,5 +1,6 @@
 import React from 'react'
 import Script from 'next/script'
+import Link from 'next/link'
 
 function Home(props) {
     return (
@@ -18,8 +19,8 @@ function Home(props) {
 								<article key = {i.data.id} class="thumb">
 									<a href={i.data.url} class="image"><img src={i.data.url} alt="" /></a>		
 									<h2>{i.data.title}</h2>
-									<a className = "link" target="_blank" href = {`https://reddit.com/${i.data.permalink}`}> 
-									View Original</a> 
+									<Link className = "link" target="_blank" rel="noreferrer" href = {`https://reddit.com/${i.data.permalink}`}> 
+									View Original</Link> 
 								</article>
 								)
 							})
