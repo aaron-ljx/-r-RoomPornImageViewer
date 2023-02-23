@@ -17,7 +17,7 @@ function Home(props) {
 							props.img.map(i => {
 								return (
 								<article key = {i.data.id} class="thumb">
-									<a href={i.data.url} class="image"><img src={i.data.url} alt="" /></a>		
+									<a target="_blank" rel="noreferrer" href={i.data.url} class="image"><img src={i.data.url} alt="" /></a>		
 									<h2>{i.data.title}</h2>
 									<Link className = "link" target="_blank" rel="noreferrer" href = {`https://reddit.com/${i.data.permalink}`}> 
 									View Original</Link> 
